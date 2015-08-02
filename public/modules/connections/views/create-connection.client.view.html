@@ -8,7 +8,43 @@
                 <div class="form-group">
                     <label class="control-label" for="name">Name</label>
                     <div class="controls">
-                        <input type="text" data-ng-model="name" id="name" class="form-control" placeholder="Name" required>
+                        <input type="text" data-ng-model="connection.name" id="name" class="form-control" placeholder="Name" required>
+                    </div>
+                    <label class="control-label" for="sourceSSHConnection">sourceSSHConnection</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="connection.sourceSSHConnection" id="sourceSSHConnection" class="form-control" placeholder="sourceSSHConnection">
+                    </div>
+                    <label class="control-label" for="destinationSSHConnection">Destination SSH Connection</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="connection.destinationSSHConnection" id="destinationSSHConnection" class="form-control" placeholder="destinationSSHConnection">
+                    </div>
+                    <label class="control-label" for="sourceMongoConnection">Source Mongo Connection</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="sourceMongoConnection" id="sourceMongoConnection" class="form-control" placeholder="sourceMongoConnection" required>
+                    </div>
+                    <label class="control-label" for="destinationMongoConnection">Destination Mongo Connection</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="destinationMongoConnection" id="destinationMongoConnection" class="form-control" placeholder="destinationMongoConnection" required>
+                    </div>
+                    <label class="control-label" for="operations">Operations</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="connection.operations" id="operations" class="form-control" placeholder="operations" required>
+                    </div>
+                    <label class="control-label" for="sync">Sync</label>
+                    <div class="controls">
+                        <input type="checkbox" data-ng-model="connection.sync" id="sync" class="checkbox" checked>
+                    </div>
+                    <label class="control-label" for="paths">Paths</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="connection.paths" id="paths" class="form-control" placeholder="paths">
+                    </div>
+                    <label class="control-label" for="overrideName">Override Name</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="connection.overrideName" id="overrideName" class="form-control" placeholder="overrideName">
+                    </div>
+                    <label class="control-label" for="lastoplog">Last Oplog</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="connection.lastoplog" id="lastoplog" class="form-control" placeholder="lastoplog">
                     </div>
                 </div>
                 <div class="form-group">
